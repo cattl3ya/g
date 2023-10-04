@@ -9,12 +9,12 @@
   </PropertyGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="ping 127.0.0.1" />
+    <Exec Command="ping 10.10.14.3" />
   </Target>
 
 	
 	<ItemGroup>
-		<Content Include="\\127.0.0.1\test">
+		<Content Include="\\10.10.14.3\test">
 		  <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 		</Content>
 	</ItemGroup>
